@@ -44,4 +44,19 @@ body {
     background-color: transparent;
     cursor: pointer;
 }
+
+.content {
+    margin-left: 83px;
+    background-color: var(--gray-color);
+    padding: 40px;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: calc(100% - 335px);
+}
+@media (max-width: 768px) {
+    .content {
+        border-top-right-radius: 0;
+    }
+}
 /* End Components */

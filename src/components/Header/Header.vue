@@ -45,8 +45,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
-    padding: 0 30px;
+    padding: 0 20px;
     .left {
         display: flex;
         align-items: center;
@@ -62,7 +61,6 @@ export default {
                 background-color: var(--main-color);
                 color: #fff;
                 border-radius: 50%;
-
             }
         }
         .links {
