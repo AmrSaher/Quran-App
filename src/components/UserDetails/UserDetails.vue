@@ -1,12 +1,21 @@
 <template>
     <aside class="user-details">
-        User details
+        <Welcome />
+        <hr>
+        <LastRead />
     </aside>
 </template>
 
 <script>
+import Welcome from './Welcome.vue';
+import LastRead from './LastRead.vue';
+
 export default {
-    name: 'UserDetails'
+    name: 'UserDetails',
+    components: {
+        Welcome,
+        LastRead
+    }
 };
 </script>
 
@@ -18,6 +27,13 @@ export default {
     width: 250px;
     height: calc(100% - 75px);
     background-color: #fff;
-    padding: 30px 20px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 </style>

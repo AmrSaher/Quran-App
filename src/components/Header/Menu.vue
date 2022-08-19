@@ -3,18 +3,24 @@
         <button class="close-btn flat-btn" @click="closeMenu"><i class="fa-solid fa-xmark"></i></button>
         <SearchBar />
         <NavLinks />
+        <Welcome />
+        <LastRead />
     </aside>
 </template>
 
 <script>
 import NavLinks from './NavLinks.vue';
 import SearchBar from './SearchBar.vue';
+import Welcome from '../UserDetails/Welcome.vue';
+import LastRead from '../UserDetails/LastRead.vue';
 
 export default {
     name: 'Menu',
     components: {
         NavLinks,
-        SearchBar
+        SearchBar,
+        Welcome,
+        LastRead
     },
     computed: {
         showMenu() {
